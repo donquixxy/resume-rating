@@ -102,6 +102,7 @@ def read_file_words(file: BinaryIO) -> list[str]:
 
 def main():
     ### Create streamlit header
+    st.set_page_config(page_title="AI Resume Check")
     st.subheader("Rate your candidate Resume, Check wether they are matches your job 👀")
 
     text_input = st.text_area(label="Input job qualifications",  placeholder=placeholder, help=help)
